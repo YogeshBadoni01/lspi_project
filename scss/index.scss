@@ -1,0 +1,28 @@
+//  =======================base====================== 
+@import 'base/reset';
+@import 'base/typography';
+
+//  =======================Component====================== 
+
+@import 'components/button';
+@import 'components/container';
+
+//  =======================Helpers====================== 
+
+@import 'helpers/responsive';
+@import 'helpers/color_variable';
+
+//  =======================layout====================== 
+
+@import 'layout/header';
+@import 'layout/footer';
+
+
+
+//  =======================pages====================== 
+
+@import 'pages/main.scss';
+
+//  =======================globle====================== 
+
+@import 'globle';

@@ -1,0 +1,311 @@
+@import 'helpers/responsive';
+@import 'helpers/color_variable';
+@import 'scss/components/button';
+@import 'scss/components/container';
+
+//  =======================Home====================== 
+#Home{
+    
+    #mycarousel{
+        background: linear-gradient(rgba(55, 142, 181, 0.5), rgba(37, 39, 41, 0.7)), top center;
+        .carousel-indicators[data-bs-target]{
+            background-clip:initial ;
+        }
+        .carousel-inner{
+            .carousel-item{
+                position: relative;
+                .carousel-caption{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    text-align: center;
+
+                    h2{
+                        font-weight: 600;
+                        font-size: 28px;
+                        @include small{
+                            font-size: 16px;
+                        }
+
+                        @include medium{
+                            font-size: 20px;
+                        }
+                    }
+                    p{
+                        font-weight: 400;
+                        font-size: 14px;
+                        @include small{
+                            font-size: 8px;
+                        }
+
+                        @include large{
+                            display: none;
+                        }
+                    }
+
+                    button{
+                        margin: 5px;
+                        padding: 10px 15px;
+                        font-size: 12px;
+
+                        @include medium{
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//  =======================Product====================== 
+#Product{
+    // height: 80vh;
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .prodcut_full{
+       
+        .porduct_top{
+            
+            h2{
+                font-family: 'Poppins';
+                font-size: 32px;
+                font-weight: 600;
+            }
+        }
+
+        .porduct_bottom{
+            .prodcut_bottom_card{
+                .card{
+                    box-shadow: 0px 0px 1px;
+                }
+            }
+        }
+    }
+}
+
+//  =======================capabilities====================== 
+#Capabilities{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .capabilities_full{
+        .capabilities_top{
+            h2{
+                font-weight: 600;
+                font-size: 32px;
+            }
+        }
+
+        .capabilities_bottom{
+            .card{
+                border-radius: 0;
+                img{
+                    max-width: 100px;
+                    height: 100px;
+                    padding: 20px;
+                }
+                .card-title{
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+            .card_1{
+                background-color:$pinkred ;
+            }
+            .card_2{
+                background-color:$dark_blue;
+            }
+            .card_3{
+                background-color: $yellow;
+            }
+            .card_4{
+                background-color: $green;
+            }
+            .card_5{
+                background-color: $light_blue;
+            }
+
+        }
+    }
+}
+
+//  =======================Testimonials====================== 
+#Testimonials{
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    .testimonials_full{
+        .testimonials_top{
+            h2{
+                font-weight: 600;
+                font-size: 28px;
+            }
+        }
+        .testimonials_bottom{
+            position: relative;
+            .swiper-container {
+                width: 100%;
+                height: 100%;
+                margin-left: auto;
+                margin-right: auto;
+        
+                .swiper-slide {
+                    background-color: rgb(228, 239, 241);
+                    text-align: center;
+                    font-size: 18px;
+                    background: #fff;
+                    height: calc((100% - 30px) / 2);
+                    position: relative;
+                    /* Center slide text vertically */
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    -webkit-justify-content: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    -webkit-align-items: center;
+                    align-items: center;
+                    gap: 50px;
+                    box-shadow: 0px 3px 10px #00000008;
+                    border: 1px solid #F2F2F2;
+                    span{
+                        position: absolute;
+                        top: -43px;
+                        left: 50px;
+                        font-size: 100px;
+                    }
+                    .card{
+                        border: 0;
+                        
+                       
+                        .card-top-icon{
+                            img{
+                                max-width: 100px;
+                            }
+                        }
+                        p{
+                            font-size: 15px;
+                            font-weight: 400;
+                        }
+                        h3{
+                            font-size: 24px;
+                        }
+                        
+                    }
+                  }
+              }
+
+        }
+    }
+    
+    
+}
+
+#Blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:100px;
+    .blog_full{
+
+        .blog_top{
+            h2{
+                font-size: 28px;
+                font-weight: 600;
+            }
+        }
+        .blog_bottom{
+
+           .card{
+            box-shadow: 0px 3px 10px #00000008;
+            border: 1px solid #F2F2F2;
+            .card-body{
+                .text-gray{
+                    color: $gray_6;
+                    }
+            }
+           }
+        }
+        .blog_btn{
+            padding: 15px 25px;
+       }
+    }
+}
+
+//  =======================Event====================== 
+#Event{
+    .event_full{
+        .event_top{
+            h2{
+                font-weight: 600;
+                font-size: 32px;
+            }
+        }
+        .event_bottom{
+            .event_card{
+                box-shadow: 0px 3px 10px #00000008;
+                border: 1px solid #F2F2F2;
+            }
+        }
+    }
+}
+
+//  =======================Signup====================== 
+#Signup{
+    .signup_full{
+        .signup_top{
+            h2{
+                padding: 25px;
+                font-weight: 600;
+                font-size: 32px;
+            }
+        }
+        .signup_bottom{
+
+        label{
+            font-size: 20px;
+        }
+        label::after{
+            contain: "*";
+            color: red;
+            width: 100%;
+            top: 0;
+            left: 0;
+            }
+        .input{
+            border: 0;
+            border-radius: 0;
+            border-bottom: 1px solid black;
+        } 
+        input:focus{
+            box-shadow: none;
+            
+        }
+
+        button{
+            margin: 20px 0;
+            padding: 15px 48px;
+            background-color: $light_black;
+            color: $white;
+            font-weight: 400;
+            font-size: 18px;
+        }
+        }
+    }
+}

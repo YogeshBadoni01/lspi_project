@@ -1,0 +1,52 @@
+@import 'color_variable';
+#Footer{
+    .footer_full{
+        .footer_top{
+            .quick_link{
+                color: $white;
+                h2{
+                    font-size: 20px;
+                }
+                li{
+                    a{
+                        font-size: 10px;
+                        color: $white;
+                    }
+                }
+            }
+            .main_link{
+                color: $white;
+                h2{
+                    font-size: 20px;
+                }
+                li{
+                    a{
+                        font-size: 10px;
+                        color: $white;
+                    }
+                }
+            }
+            .follow_link{
+                color: $white;
+                h2{
+                    font-size: 20px;
+                }
+
+                ul{
+                    
+                    display: flex;
+                    justify-content: start;
+                    align-items: flex-start;
+                    gap: 20px;
+                    li{
+                        a{
+                            font-size: 20px;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        
+    }
+}
+}
